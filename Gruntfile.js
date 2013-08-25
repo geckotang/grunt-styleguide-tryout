@@ -5,7 +5,7 @@ module.exports = function(grunt){
 	matchde.filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// init config
-	grunt.initConfig({
+	var config = {
 		pkg: grunt.file.readJSON('package.json'),
 		styleguide: {
 			styledocco: {
@@ -21,12 +21,15 @@ module.exports = function(grunt){
 			}
 		},
 		regarde: {
-			css: {
+			scss: {
 				files: 'scss/**/*.scss',
 				tasks: ['styleguide']
 			}
 		}
-	});
+	};
+
+	// init 
+	grunt.initConfig(config);
 
 	// resiter tasks
 	grunt.registerTask('default', ['regarde']);
