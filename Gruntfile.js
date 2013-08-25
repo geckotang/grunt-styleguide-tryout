@@ -20,7 +20,7 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		regarde: {
+		watch: {
 			scss: {
 				files: 'scss/**/*.scss',
 				tasks: ['styleguide']
@@ -31,8 +31,11 @@ module.exports = function(grunt){
 	// init 
 	grunt.initConfig(config);
 
+	grunt.event.on('watch', function(action, filepath) {
+		console.log(action, filepath);
+	});
+
 	// resiter tasks
-	grunt.registerTask('default', ['regarde']);
+	grunt.registerTask('default', ['watch']);
 	grunt.registerTask('build', ['styleguide']);
 };
-

@@ -16,7 +16,7 @@
     "grunt": ">=0.4",
     "grunt-styleguide": "",
     "matchdep": "~0.1.2",
-    "grunt-regarde": "~0.1.1"
+    "grunt-contrib-watch": "~0.5.2"
   },
   "dependencies": {}
 }
