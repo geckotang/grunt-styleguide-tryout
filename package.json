@@ -1,0 +1,22 @@
+{
+  "author": "geckotang",
+  "name": "grunt-styleguid-tryout",
+  "version": "1.0.0",
+  "description": "Sample",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:geckotang/grunt-styleguide-tryout.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "readmeFilename": "README.markdown",
+  "devDependencies": {
+    "grunt": ">=0.4",
+    "grunt-styleguide": "",
+    "matchdep": "~0.1.2",
+    "grunt-regarde": "~0.1.1"
+  },
+  "dependencies": {}
+}
